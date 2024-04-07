@@ -34,6 +34,19 @@ public class Main {
         }
         //Task 4
         System.out.println("\nTask4");
-        
+        int deliveryDistance = 95;
+        int days = 1;
+
+        if (deliveryDistance <= 20) {
+            System.out.println("Потребуется дней: " + days);
+        } else if (deliveryDistance > 20 && deliveryDistance <= 60) {
+            days = days +1;
+            System.out.println("Потребуется дней: " + days);
+        } else if (deliveryDistance > 60 && deliveryDistance <= 100) {
+            days = days +1;  
+            System.out.println("Потребуется дней: " + days);
+        } else {
+            System.out.println("Доставке нет");
+        }
     }
 }
