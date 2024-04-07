@@ -27,10 +27,13 @@ public class Main {
         //Task 3
         System.out.println("\nTask3");
         int year = 2021;
-        if (year > 1584 && year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+        if (year > 1584 && (year % 4 == 0 && year % 100 != 0 || year % 400 == 0)) {
             System.out.printf("%s. год является високосным.%n", year);
         } else {
             System.out.printf("%s. год не является високосным.%n", year);
         }
+        //Task 4
+        System.out.println("\nTask4");
+        
     }
 }
