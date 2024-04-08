@@ -2,24 +2,24 @@ public class Main {
     public static void main(String[] args) {
         //Task 1
         System.out.println("\nTask1");
-        int userOperatingSystem = 1;
-        if (userOperatingSystem == 1) {
+        int clientOS = 1;
+        if (clientOS == 1) {
             System.out.println("Установите версию приложения для Android по ссылке");
-        } else if  (userOperatingSystem == 0) {
+        } else if (clientOS == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке");
         } else {
             System.out.println("Такая система не поддерживается");
         }
         //Task 2
         System.out.println("\nTask2");
-        int operatingSystemYear = 2013;
-        if (userOperatingSystem == 1 && operatingSystemYear < 2015) {
+        int clientDeviceYear = 2013;
+        if (clientOS == 1 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
-        } else if (userOperatingSystem == 1 && operatingSystemYear >= 2015) {
+        } else if (clientOS == 1 && clientDeviceYear >= 2015) {
             System.out.println("Установите версию приложения для Android по ссылке");
-        } else if (userOperatingSystem == 0 && operatingSystemYear < 2015) {
+        } else if (clientOS == 0 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-        } else if (userOperatingSystem == 0 && operatingSystemYear >= 2015) {
+        } else if (clientOS == 0 && clientDeviceYear >= 2015) {
             System.out.println("Установите  версию приложения для iOS по ссылке");
         } else {
             System.out.println("Такая система не поддерживается");
@@ -40,13 +40,13 @@ public class Main {
         if (deliveryDistance <= 20) {
             System.out.println("Потребуется дней: " + days);
         } else if (deliveryDistance > 20 && deliveryDistance <= 60) {
-            days = days +1;
+            days += 1;
             System.out.println("Потребуется дней: " + days);
         } else if (deliveryDistance > 60 && deliveryDistance <= 100) {
-            days = days +1;  
+            days += 1;
             System.out.println("Потребуется дней: " + days);
         } else {
-            System.out.println("Доставке нет");
+            System.out.println("Доставки нет");
         }
         //Task 5
         System.out.println("\nTask5");
@@ -56,7 +56,7 @@ public class Main {
             case 3, 4, 5 -> System.out.println("Весна");
             case 6, 7, 8 -> System.out.println("Лето");
             case 9, 10, 11 -> System.out.println("Осень");
-            default -> System.out.println("Введен неправильный месяц ");
+            default -> System.out.println("Введен неправильный месяц");
         }
     }
 }
