@@ -34,7 +34,7 @@ public class Main {
         }
         //Task 4
         System.out.println("\nTask4");
-        int deliveryDistance = 199;
+        int deliveryDistance = 95;
         int days = 1;
         if (deliveryDistance > 20 && deliveryDistance <= 60) {
             days += 1;
